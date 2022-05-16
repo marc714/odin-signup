@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="odin-lined.png">
+                <h1>ODIN</h1>
+            </div>
+        </div>
+
+        <div class="signup-container">
+            <div class="sub-header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+               
+                <p>You <em>know</em> you want to.</p>
+               
+                
+            </div>
+
+            <div class="form-container">
+                <h3>Let's do this!</h3>
+                
+                <form id="signup">
+                    <fieldset id="full-name">
+                        <div class="field-block first-name">
+                            <label for="first-name">First Name<abbr title="This field is mandatory" aria-label="required">*</abbr>
+                                </label>
+                            <input type="text" name="first-name" required>
+                        </div>
+                        <div class="field-block last-name">
+                            <label for="last-name">Last Name<abbr title="This field is mandatory" aria-label="required">*</abbr>
+                                </label>
+                            <input type="text" name="last-name" required>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="field-block">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                        <span></span>
+                    </div>
+                    <div class="field-block">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" name="phone" id="phone">
+                        <span></span>
+                    </div>
+
+                    <fieldset id="password">
+                        <div class="field-block password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" minlength=6 maxlength=10 onChange="onChange()">
+                            <span></span>
+                        </div>
+                        <div class="field-block confirm-password">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" onChange="onChange()">
+                            <span></span>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+
+            <div class="account">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href=#>Log in!</a></p>
+            </div>
+
+            <footer>Review: <a href="https://codepen.io/marcxy/pen/GRyaOEZ">Advanced Form</a>
+                </footer>
+        </div> <!-- signup container-->
+    </div> <!--container-->
+    
+</body>
+</html>
